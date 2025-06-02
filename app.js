@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require('express');
 const path = require('path'); // for view___________________>
 const cookieParser = require('cookie-parser');
@@ -10,7 +12,7 @@ const staticRouter = require('./routes/staticRouter');
 const userRoute = require('./routes/user');
 
 const app = express();
-const PORT = 8001;
+const PORT = process.env.PORT;
 const URL = require('./models/URL');
 
 
@@ -26,7 +28,9 @@ app.use(express.urlencoded({extended:false}));
 app.use(cookieParser());
 
 //connecting to mongodb:-
-connectToMongoDB("mongodb://127.0.0.1:27017/projectshortner").then(()=>console.log("Mongodb Connected..."));
+mongoose.connect(process.env.MONGO_URL)
+.then(() => console.log("MongoDB Connected....")); // for deployment
+
 
 //Routing:-
 
