@@ -5,6 +5,7 @@ const path = require('path'); // for view___________________>
 const cookieParser = require('cookie-parser');
 const {connectToMongoDB} = require("./connection");
 const {restrictToLoggedinUserOnly,checkAuth} = require('./middleware/auth');
+const mongoose = require("mongoose");
 
 //import routers:;-
 const urlRoute = require('./routes/url');
