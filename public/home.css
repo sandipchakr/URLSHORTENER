@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(231, 236, 239);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/Url3.jpg");
+    background-size: cover;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(164, 7, 172, 0.4); /* semi-transparent background */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* deeper shadow */
+    backdrop-filter: blur(1.2px); /* blur behind the element */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* soft border */
+    color: rgb(231, 236, 239);
+    padding: 15px 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 2px; 
+}
+.footer{
+    height: 50px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(231, 236, 239);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: rgba(164, 7, 172, 0.4);;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* deeper shadow */
+    backdrop-filter: blur(1.2px); /* blur behind the element */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* soft border */
+}
+.navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-buttons button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.navbar-buttons button:hover {
+    background-color: #0056b3;
+}

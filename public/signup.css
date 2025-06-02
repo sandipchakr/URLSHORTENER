@@ -1,0 +1,96 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+     background-image: url("/Url3.jpg");
+    background-size: cover;
+}
+
+form {
+    background: rgba(19 100 204 / 6%);/* semi-transparent background */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);/* deeper shadow */
+    backdrop-filter: blur(1.2px);/* blur behind the element */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 30px;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    align-self: baseline;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: rgba(19 100 204 / 6%);/* semi-transparent background */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);/* deeper shadow */
+    backdrop-filter: blur(1.2px);/* blur behind the element */
+}
+
+button {
+    background: rgba(10 224 131 / 33%); /* semi-transparent background */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(1.2px);
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+     background: rgba(10, 224, 131, 0.46);
+}
+input:hover{
+      background: rgba(19, 99, 204, 0.289)
+}
+input:focus {
+    background: rgba(19, 100, 204, 0.06); /* keep same background */
+    outline: none;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* keep same shadow */
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active {
+    background: rgba(19, 100, 204, 0.06) !important;
+    box-shadow: 0 0 0px 1000px rgba(19, 100, 204, 0.06) inset !important;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(19, 100, 204, 0.06) inset !important;
+    -webkit-text-fill-color: #050000 !important; /* ensures text is visible */
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+@media (max-width: 500px) {
+    form {
+        padding: 15px 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
